@@ -4,9 +4,9 @@
 import { RenderPlugin } from "@11ty/eleventy";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
-import eleventyBladesPlugin from "@anyblades/eleventy-blades";
+import eleventyBladesPlugin from "@anyblades/buildawesome-kit-plugin";
 import pluginTOC from "@uncenter/eleventy-plugin-toc";
-import { siteData } from "@anyblades/eleventy-blades/features/siteData.js";
+import { siteData } from "@anyblades/buildawesome-kit-plugin/features/siteData.js";
 /* Libraries (A-Z) */
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
@@ -45,7 +45,7 @@ export default async function (eleventyConfig, pluginOptions = {}) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(
     eleventyBladesPlugin,
-    pluginOptions.plugins?.["@anyblades/eleventy-blades"] ?? { mdAutoRawTags: true },
+    pluginOptions.plugins?.["@anyblades/buildawesome-kit-plugin"] ?? { mdAutoRawTags: true },
   );
   eleventyConfig.addPlugin(pluginTOC, {
     ignoredElements: [".header-anchor", "sub"],
