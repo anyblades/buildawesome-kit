@@ -1,5 +1,5 @@
 {
-  "name": "@anyblades/eleventy-blades",
+  "name": "@anyblades/buildawesome-kit-plugin",
   "version": "1.3.0",
   "type": "module",
   "main": "./plugin.js",
@@ -41,7 +41,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anyblades/eleventy-blades.git"
+    "url": "git+https://github.com/anyblades/buildawesome-kit.git"
   },
   "===": "==="
 }
