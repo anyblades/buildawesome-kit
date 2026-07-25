@@ -1,0 +1,3 @@
+[submodule "starters"]
+	path = starters
+	url = https://github.com/anyblades/buildawesome-micro-starters.git
