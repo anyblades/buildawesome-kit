@@ -1,5 +1,5 @@
 {
-  "name": "@anyblades/eleventy-blades-base",
+  "name": "@anyblades/buildawesome-kit",
   "version": "1.3.0",
   "type": "module",
   "main": "./eleventy.config.js",
@@ -7,7 +7,7 @@
     "@11ty/eleventy-navigation": "^1.0.5",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@anyblades/blades": "^2.4.6",
-    "@anyblades/eleventy-blades": "^1.3.0",
+    "@anyblades/buildawesome-kit-plugin": "^1.3.0",
     "@uncenter/eleventy-plugin-toc": "^2.1.1",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
@@ -26,10 +26,14 @@
       "optional": true
     }
   },
+  "=== DEV ONLY": "===",
+  "workspaces": [
+    "plugin"
+  ],
   "=== METADATA": "===",
   "author": "Anton Staroverov",
   "description": "A ready-to-go `eleventy.config.js` for popular 11ty plugins, bundled with npm scripts in one reusable, zero-maintenance package.",
-  "homepage": "https://11ty.blades.ninja/base/",
+  "homepage": "https://build.blades.ninja/",
   "keywords": [
     "11ty",
     "buildawesome",
@@ -39,8 +43,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anyblades/eleventy-blades.git",
-    "directory": "packages/eleventy-blades-base"
+    "url": "git+https://github.com/anyblades/buildawesome-kit.git"
   },
   "===": "==="
 }

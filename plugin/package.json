@@ -30,7 +30,7 @@
   "=== METADATA": "===",
   "author": "Anton Staroverov",
   "description": "Essential 11ty filters, pre/post-processors, and other toggleable features as a simple, configurable plugin",
-  "homepage": "https://11ty.blades.ninja/",
+  "homepage": "https://build.blades.ninja/plugin/",
   "keywords": [
     "11ty",
     "buildawesome",
@@ -41,7 +41,8 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anyblades/buildawesome-kit.git"
+    "url": "git+https://github.com/anyblades/buildawesome-kit.git",
+    "directory": "plugin/"
   },
   "===": "==="
 }
