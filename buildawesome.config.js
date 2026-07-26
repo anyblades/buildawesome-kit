@@ -4,9 +4,9 @@
 import { RenderPlugin } from "@awesome.me/buildawesome";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
-import kitPlugin from "@anyblades/buildawesome-kit-plugin";
+import kitPlugin from "@anyblades/buildawesome-kit";
 import pluginTOC from "@uncenter/eleventy-plugin-toc";
-import { siteData } from "@anyblades/buildawesome-kit-plugin/features/siteData.js";
+import { siteData } from "@anyblades/buildawesome-kit/features/siteData.js";
 /* Libraries (A-Z) */
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
@@ -44,10 +44,7 @@ export default async function ($config, pluginOptions = {}) {
   });
   $config.addPlugin(RenderPlugin);
   $config.addPlugin(eleventyNavigationPlugin);
-  $config.addPlugin(
-    kitPlugin,
-    pluginOptions.plugins?.["@anyblades/buildawesome-kit-plugin"] ?? { mdAutoRawTags: true },
-  );
+  $config.addPlugin(kitPlugin, pluginOptions.plugins?.["@anyblades/buildawesome-kit"] ?? { mdAutoRawTags: true });
   $config.addPlugin(pluginTOC, {
     ignoredElements: [".header-anchor", "sub"],
     ul: true,
