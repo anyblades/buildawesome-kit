@@ -26,12 +26,13 @@ export default async function ($config, pluginOptions = {}) {
   /* Dirs */
   const inputDir = $config.directories.input;
   const outputDir = $config.directories.output;
-  const cwdIsDotEleventy = path.basename(process.cwd()) === ".11ty";
-  if (cwdIsDotEleventy) {
+  const _cwd = path.basename(process.cwd());
+  const cwdDotDir = _cwd.startsWith(".") ? _cwd : undefined;
+  if (cwdDotDir) {
     // Per https://www.11ty.dev/docs/config/#directory-for-includes
     // Order matters, put this at the top of your configuration file.
     // This is relative to your input directory!
-    $config.setIncludesDirectory("./.11ty/_includes/");
+    $config.setIncludesDirectory(`${cwdDotDir}/_includes/`);
   }
 
   /* Plugins */
@@ -133,9 +134,9 @@ export default async function ($config, pluginOptions = {}) {
   });
   // Dev tools
   $config.setChokidarConfig({ followSymlinks: true }); // follow symlinks in Chokidar used by 11ty to watch files
-  if (cwdIsDotEleventy) {
-    $config.watchIgnores.add(`../.11ty/${outputDir}`); // !!! avoid circular watching
-    $config.watchIgnores.add("../.11ty/node_modules/"); // avoid performance issues
+  if (cwdDotDir) {
+    $config.watchIgnores.add(`../${cwdDotDir}/${outputDir}`); // !!! avoid circular watching
+    $config.watchIgnores.add(`../${cwdDotDir}/node_modules/`); // avoid performance issues
   }
 }
 //```
