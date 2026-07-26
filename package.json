@@ -1,6 +1,6 @@
 {
   "name": "@anyblades/buildawesome-kit",
-  "version": "1.3.0",
+  "version": "1.3.0-alpha",
   "type": "module",
   "main": "./eleventy.config.js",
   "dependencies": {
