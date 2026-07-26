@@ -6,13 +6,13 @@
 import { readFileSync } from "fs";
 import YAML from "js-yaml";
 
-export default function (eleventyConfig) {
+export default function ($config) {
   // Virtual pages
-  const pages = YAML.load(readFileSync(eleventyConfig.directories.input + "/pages.yaml", "utf8"));
+  const pages = YAML.load(readFileSync($config.directories.input + "/pages.yaml", "utf8"));
   for (const [index, data] of pages.entries()) {
     const virtualSlug = data.permalink ? data.permalink + "index" : index;
     // console.log(data, virtualSlug);
-    eleventyConfig.addTemplate("." + virtualSlug + ".md", "", data);
+    $config.addTemplate("." + virtualSlug + ".md", "", data);
   }
 }
 //```

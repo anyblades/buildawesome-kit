@@ -60,8 +60,8 @@ export function replaceLinksInHtml(content, transformer) {
   );
 }
 
-export default function (eleventyConfig) {
-  eleventyConfig.addTransform("autoLinkFavicons", function (content) {
+export default function ($config) {
+  $config.addTransform("autoLinkFavicons", function (content) {
     if (this.page.outputPath && this.page.outputPath.endsWith(".html")) {
       return replaceLinksInHtml(content, transformLink);
     }

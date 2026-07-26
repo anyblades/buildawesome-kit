@@ -2,7 +2,7 @@
   "name": "@anyblades/buildawesome-kit",
   "version": "1.3.0-alpha",
   "type": "module",
-  "main": "./eleventy.config.js",
+  "main": "./buildawesome.config.js",
   "dependencies": {
     "@11ty/eleventy-navigation": "^1.0.5",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
@@ -32,7 +32,7 @@
   ],
   "=== METADATA": "===",
   "author": "Anton Staroverov",
-  "description": "A ready-to-go `eleventy.config.js` for popular 11ty plugins, bundled with npm scripts in one reusable, zero-maintenance package.",
+  "description": "A ready-to-go `buildawesome.config.js` for popular 11ty plugins, bundled with npm scripts in one reusable, zero-maintenance package.",
   "homepage": "https://build.blades.ninja/",
   "keywords": [
     "11ty",

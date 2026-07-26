@@ -16,8 +16,8 @@ export function transformUncommentAttrs(content) {
   return content;
 }
 
-export default function mdAutoUncommentAttrs(eleventyConfig) {
-  eleventyConfig.amendLibrary("md", (mdLib) => {
+export default function mdAutoUncommentAttrs($config) {
+  $config.amendLibrary("md", (mdLib) => {
     mdLib.core.ruler.before("normalize", "uncomment_attrs", (state) => {
       state.src = transformUncommentAttrs(state.src);
     });

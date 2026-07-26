@@ -8,7 +8,7 @@ export const discoverModules = (dir) =>
       .map((f) => [f.replace(/\.js$/, ""), true]),
   );
 
-export default async function (eleventyConfig, userOptions) {
+export default async function ($config, userOptions) {
   //```<!--section:code,def-options-->```js
   const defaultOptions = { mdAutoRawTags: false };
   //```<!--section:code-->```js
@@ -31,7 +31,7 @@ export default async function (eleventyConfig, userOptions) {
     try {
       if (filterName == "fetch") await import("@11ty/eleventy-fetch");
       const filterFunc = (await import("./filters/" + filterName + ".js")).default;
-      eleventyConfig.addFilter(filterName, filterFunc);
+      $config.addFilter(filterName, filterFunc);
     } catch (error) {
       console.log("^ N/A ^");
     }
@@ -44,7 +44,7 @@ export default async function (eleventyConfig, userOptions) {
     console.log("Loading feature: " + featureName + "...");
     try {
       const featureConfig = (await import("./features/" + featureName + ".js")).default;
-      featureConfig(eleventyConfig);
+      featureConfig($config);
     } catch (error) {
       console.log("^ N/A ^");
     }

@@ -12,8 +12,8 @@ export function transformNl2br(content) {
   return content.replace(/\\n\\n/g, "<br>").replace(/\\n/g, "<br>");
 }
 
-export default function mdAutoNl2br(eleventyConfig) {
-  eleventyConfig.amendLibrary("md", (mdLib) => {
+export default function mdAutoNl2br($config) {
+  $config.amendLibrary("md", (mdLib) => {
     mdLib.renderer.rules.text = (tokens, idx) => {
       return transformNl2br(tokens[idx].content);
     };

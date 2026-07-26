@@ -39,15 +39,15 @@ Then `addPlugin` to your 11ty config:
 ```js
 import eleventyBladesPlugin from "@anyblades/eleventy-blades";
 
-export default function (eleventyConfig) {
-  eleventyConfig.addPlugin(eleventyBladesPlugin);
+export default function ($config) {
+  $config.addPlugin(eleventyBladesPlugin);
 }
 ```
 
 You can toggle features/filters like this:
 
 ```js
-eleventyConfig.addPlugin(eleventyBladesPlugin, {
+$config.addPlugin(eleventyBladesPlugin, {
   mdAutoRawTags: false,
   filters: { attr_set: false },
 });
@@ -93,7 +93,7 @@ cd _includes/
 ln -s ../node_modules/@anyblades/blades/_includes/blades
 
 # Run Eleventy:
-eleventy --config=node_modules/@anyblades/eleventy-blades-base/eleventy.config.js
+eleventy --config=node_modules/@anyblades/eleventy-blades-base/buildawesome.config.js
 ```
 
 Live examples:
@@ -106,7 +106,7 @@ Live examples:
 If you don't want to type `--config=...` every time, symlink it once:
 
 ```sh
-ln -s node_modules/@anyblades/eleventy-blades-base/eleventy.config.js
+ln -s node_modules/@anyblades/eleventy-blades-base/buildawesome.config.js
 eleventy
 ```
 
@@ -114,7 +114,7 @@ Or save it in your `package.json` scripts:
 
 ```json
   "scripts": {
-    "build": "eleventy --config=node_modules/@anyblades/eleventy-blades-base/eleventy.config.js"
+    "build": "eleventy --config=node_modules/@anyblades/eleventy-blades-base/buildawesome.config.js"
   }
 ```
 
@@ -125,15 +125,15 @@ Alternatively, import it as a base config in your 11ty config:
 ```js
 import baseConfig from "@anyblades/eleventy-blades-base";
 
-export default async function (eleventyConfig) {
-  await baseConfig(eleventyConfig);
+export default async function ($config) {
+  await baseConfig($config);
 }
 ```
 
 You can toggle features/filters like this:
 
 ```js
-await baseConfig(eleventyConfig, {
+await baseConfig($config, {
   plugins: {
     "@anyblades/eleventy-blades": {
       mdAutoRawTags: false,
@@ -145,8 +145,8 @@ await baseConfig(eleventyConfig, {
 
 Live examples:
 
-- https://github.com/johnheenan/minform/blob/main/eleventy.config.js
-- https://github.com/hostfurl/minformhf/blob/main/eleventy.config.js
+- https://github.com/johnheenan/minform/blob/main/buildawesome.config.js
+- https://github.com/hostfurl/minformhf/blob/main/buildawesome.config.js
 
 <!--section:gh-only-->
 

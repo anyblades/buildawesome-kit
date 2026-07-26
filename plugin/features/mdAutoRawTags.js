@@ -9,8 +9,8 @@ export function transformAutoRaw(content) {
   return content.replace(/({{|}}|{%|%})/g, "{% raw %}$1{% endraw %}");
 }
 
-export default function mdAutoRawTags(eleventyConfig) {
-  eleventyConfig.addPreprocessor("mdAutoRawTags", "md", (data, content) => {
+export default function mdAutoRawTags($config) {
+  $config.addPreprocessor("mdAutoRawTags", "md", (data, content) => {
     return transformAutoRaw(content);
   });
 }

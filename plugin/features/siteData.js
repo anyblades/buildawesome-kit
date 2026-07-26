@@ -31,8 +31,8 @@ export const siteData = (data) => {
   };
 };
 
-export default function (eleventyConfig) {
-  eleventyConfig.addGlobalData("eleventyComputed", {
+export default function ($config) {
+  $config.addGlobalData("eleventyComputed", {
     site: (data) => ({
       ...siteData(data),
       prod: process.env.ELEVENTY_RUN_MODE === "build",
