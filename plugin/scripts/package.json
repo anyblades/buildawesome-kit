@@ -11,6 +11,8 @@
     "build": "npm run tw; npm run ba",
     "=== INNER": "commands written so that extra arguments can be passed",
     "ba": "cd ../ && NODE_OPTIONS=--preserve-symlinks buildawesome ${BA_OPTIONS:-$ELTY_OPTIONS}",
-    "tw": "[ -z \"$TW_OPTIONS\" ] && exit 0; cd ../ && tailwindcss ${TW_OPTIONS}"
+    "tw": "[ -z \"$TW_OPTIONS\" ] && exit 0; cd ../ && tailwindcss ${TW_OPTIONS}",
+    "=== DEV": "===",
+    "dev:kit": "cd ../ && npm link @anyblades/buildawesome-kit-config && cd node_modules/@anyblades/ && ln -sf buildawesome-kit-config/node_modules/@anyblades/* && cd buildawesome-kit-config/ && npm link @anyblades/blades"
   }
 }

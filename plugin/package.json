@@ -1,6 +1,6 @@
 {
-  "name": "@anyblades/buildawesome-kit-plugin",
-  "version": "1.3.0-alpha.2",
+  "name": "@anyblades/buildawesome-kit",
+  "version": "1.3.0-alpha.3",
   "type": "module",
   "main": "./plugin.js",
   "exports": {
@@ -9,7 +9,7 @@
   },
   "peerDependencies": {
     "@11ty/eleventy": "^3.0.0 || ^4.0.0-0",
-    "@awesome.me/buildawesome": "^3.0.0 || ^4.0.0-0"
+    "@awesome.me/buildawesome": "^4.0.0-0"
   },
   "peerDependenciesMeta": {
     "@11ty/eleventy": {
