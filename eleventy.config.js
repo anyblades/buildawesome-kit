@@ -1,10 +1,10 @@
 //<!--section:code-->```js
 
 /* Plugins (core > official > contrib) */
-import { RenderPlugin } from "@11ty/eleventy";
+import { RenderPlugin } from "@awesome.me/buildawesome";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
-import eleventyBladesPlugin from "@anyblades/buildawesome-kit-plugin";
+import kitPlugin from "@anyblades/buildawesome-kit-plugin";
 import pluginTOC from "@uncenter/eleventy-plugin-toc";
 import { siteData } from "@anyblades/buildawesome-kit-plugin/features/siteData.js";
 /* Libraries (A-Z) */
@@ -44,7 +44,7 @@ export default async function (eleventyConfig, pluginOptions = {}) {
   eleventyConfig.addPlugin(RenderPlugin);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(
-    eleventyBladesPlugin,
+    kitPlugin,
     pluginOptions.plugins?.["@anyblades/buildawesome-kit-plugin"] ?? { mdAutoRawTags: true },
   );
   eleventyConfig.addPlugin(pluginTOC, {
