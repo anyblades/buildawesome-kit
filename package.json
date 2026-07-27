@@ -28,7 +28,7 @@
   },
   "=== DEV ONLY": "===",
   "workspaces": [
-    "kit"
+    "core"
   ],
   "=== METADATA": "===",
   "author": "Anton Staroverov",
