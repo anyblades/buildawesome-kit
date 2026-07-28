@@ -2,18 +2,18 @@
 
 <!--section:summary-->
 
-<h1><mark>Ultimate blade kit</mark> <small>for</small> 11ty / Build&nbsp;Awesome</h1>
+<h1><i class="fa-brands fa-eleventy"></i> <span class="faded">/</span> <mark>Build Awesome Kit</mark></h1>
 
-<big>Essential 11ty [filters](//11ty.blades.ninja/filters/), transforms, and other toggleable [features](//11ty.blades.ninja/features/) as a simple, configurable plugin. Reusable [npm scripts](//11ty.blades.ninja/scripts/) included.</big>
+<big>Universal plugin with powerful opt-out [features](//build.blades.ninja/plugin/features/), [filters](//build.blades.ninja/plugin/filters/), and [scripts](//build.blades.ninja/scripts/).</big>
+
+Install independently <span class="faded">OR</span> fully preconfigured with other essential plugins <span class="faded">OR</span> via one of our micro-starters.
 
 <nav>
-  <a href="//11ty.blades.ninja/plugin/" role="button">Get started&nbsp;&nbsp;›</a>
-  <span hidden>•</span>
-  <a href="//11ty.blades.ninja/base/" role="button" class="outline">
-    Base <span hidden>package</span> <i class="fa-brands fa-eleventy"></i>&nbsp;&nbsp;›
-  </a>
-  <span hidden>•</span>
-  <a href="//11ty.blades.ninja/starters/" role="button" class="outline">Micro-starters&nbsp;&nbsp;🌱</a>
+  <a href="//build.blades.ninja/plugin/" role="button">Get started &nbsp;›</a>
+  <span hidden>|</span>
+  <a href="//build.blades.ninja/config/" role="button" class="outline">Preconfigured &nbsp;›</a>
+  <span hidden>|</span>
+  <a href="//build.blades.ninja/starters/" role="button" class="outline">Micro-starters &nbsp;🌱</a>
 </nav>
 
 <!--section:gh-only-->
@@ -156,20 +156,20 @@ Live examples:
   
   <li>
     <strong><a href="/plugin/">Get started</a></strong>
-    <ul><li><a href="https://11ty.blades.ninja/plugin/">Plugin</a></li>
-<li><a href="https://11ty.blades.ninja/base/">Base package</a></li>
-<li><a href="https://11ty.blades.ninja/scripts/">Useful scripts</a></li>
-<li><a href="https://11ty.blades.ninja/starters/">Starter projects</a></li></ul>
+    <ul><li><a href="https://build.blades.ninja/plugin/">Plugin</a></li>
+<li><a href="https://build.blades.ninja/base/">Base package</a></li>
+<li><a href="https://build.blades.ninja/scripts/">Useful scripts</a></li>
+<li><a href="https://build.blades.ninja/starters/">Starter projects</a></li></ul>
   </li>
   
   <li>
     <strong><a href="/features/">Features</a></strong>
-    <ul><li><a href="https://11ty.blades.ninja/features/">Overview</a></li>
-<li><a href="https://11ty.blades.ninja/features/site-globals/">Site globals</a></li>
-<li><a href="https://11ty.blades.ninja/features/link-favicons/">Automatic link favicons</a></li>
-<li><a href="https://11ty.blades.ninja/features/markdown-auto-raw/">Markdown auto-raw tags</a></li>
-<li><a href="https://11ty.blades.ninja/features/markdown-hidden-attrs/">Markdown hidden attrs</a></li>
-<li><a href="https://11ty.blades.ninja/features/markdown-newlines/">Markdown newlines</a></li></ul>
+    <ul><li><a href="https://build.blades.ninja/features/">Overview</a></li>
+<li><a href="https://build.blades.ninja/features/site-globals/">Site globals</a></li>
+<li><a href="https://build.blades.ninja/features/link-favicons/">Automatic link favicons</a></li>
+<li><a href="https://build.blades.ninja/features/markdown-auto-raw/">Markdown auto-raw tags</a></li>
+<li><a href="https://build.blades.ninja/features/markdown-hidden-attrs/">Markdown hidden attrs</a></li>
+<li><a href="https://build.blades.ninja/features/markdown-newlines/">Markdown newlines</a></li></ul>
   </li>
   
   <li>
@@ -177,23 +177,23 @@ Live examples:
     <ul><li><a href="https://blades.ninja/html/starter/">HTML base ↗</a></li>
 <li><a href="https://blades.ninja/html/links/">Links ↗</a></li>
 <li><a href="https://blades.ninja/html/sitemap/">Sitemap ↗</a></li>
-<li><a href="https://11ty.blades.ninja/templates/">More</a></li></ul>
+<li><a href="https://build.blades.ninja/templates/">More</a></li></ul>
   </li>
   
   <li>
     <strong><a href="/filters/">Filters</a></strong>
-    <ul><li><a href="https://11ty.blades.ninja/filters/attr_concat/">attr_concat</a></li>
-<li><a href="https://11ty.blades.ninja/filters/attr_includes/">attr_includes</a></li>
-<li><a href="https://11ty.blades.ninja/filters/attr_set/">attr_set</a></li>
-<li><a href="https://11ty.blades.ninja/filters/date/">date</a></li>
-<li><a href="https://11ty.blades.ninja/filters/fetch/">fetch</a></li>
-<li><a href="https://11ty.blades.ninja/filters/if/">if</a></li>
-<li><a href="https://11ty.blades.ninja/filters/markdownify/">markdownify</a></li>
-<li><a href="https://11ty.blades.ninja/filters/merge/">merge</a></li>
-<li><a href="https://11ty.blades.ninja/filters/remove_tag/">remove_tag</a></li>
-<li><a href="https://11ty.blades.ninja/filters/section/">section</a></li>
-<li><a href="https://11ty.blades.ninja/filters/strip_tag/">strip_tag</a></li>
-<li><a href="https://11ty.blades.ninja/filters/unindent/">unindent</a></li></ul>
+    <ul><li><a href="https://build.blades.ninja/filters/attr_concat/">attr_concat</a></li>
+<li><a href="https://build.blades.ninja/filters/attr_includes/">attr_includes</a></li>
+<li><a href="https://build.blades.ninja/filters/attr_set/">attr_set</a></li>
+<li><a href="https://build.blades.ninja/filters/date/">date</a></li>
+<li><a href="https://build.blades.ninja/filters/fetch/">fetch</a></li>
+<li><a href="https://build.blades.ninja/filters/if/">if</a></li>
+<li><a href="https://build.blades.ninja/filters/markdownify/">markdownify</a></li>
+<li><a href="https://build.blades.ninja/filters/merge/">merge</a></li>
+<li><a href="https://build.blades.ninja/filters/remove_tag/">remove_tag</a></li>
+<li><a href="https://build.blades.ninja/filters/section/">section</a></li>
+<li><a href="https://build.blades.ninja/filters/strip_tag/">strip_tag</a></li>
+<li><a href="https://build.blades.ninja/filters/unindent/">unindent</a></li></ul>
   </li>
   
   <li>
