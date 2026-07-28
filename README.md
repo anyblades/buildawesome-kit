@@ -1,5 +1,4 @@
-<img src="https://img.shields.io/npm/v/@anyblades/eleventy-blades?label=plugin&color=white">
-<img src="https://img.shields.io/npm/v/@anyblades/eleventy-blades-base?label=base&color=white">
+<img src="https://img.shields.io/npm/v/@anyblades/eleventy-blades?label=plugin&color=white"> <img src="https://img.shields.io/npm/v/@anyblades/eleventy-blades-base?label=base&color=white">
 
 <!--section:summary-->
 
@@ -7,7 +6,7 @@
 
 <big>Universal plugin with powerful opt-out [features](//build.blades.ninja/plugin/features/), [filters](//build.blades.ninja/plugin/filters/), and [scripts](//build.blades.ninja/scripts/).</big>
 
-<big>Install independently <span class="faded">OR</span> fully preconfigured with other essential plugins <span class="faded">OR</span> via one of our micro-starters.</big>
+Install independently <span class="faded">OR</span> fully preconfigured with other essential plugins <span class="faded">OR</span> via one of our micro-starters.
 
 <nav>
   <a href="//build.blades.ninja/plugin/" role="button">Get started &nbsp;›</a>
