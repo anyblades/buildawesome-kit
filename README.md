@@ -44,6 +44,8 @@ Live example: https://github.com/anyblades/buildawesome-micro-starters/blob/main
 
 #### Features
 
+<!--section:plugin,features-->
+
 All https://build.blades.ninja/plugin/features/ except `mdAutoRawTags` are enabled by default.
 
 You can toggle them like this:
@@ -55,7 +57,11 @@ $config.addPlugin(kitPlugin, {
 });
 ```
 
+<!--section:plugin-->
+
 #### Filters
+
+<!--section:plugin,filters-->
 
 All https://build.blades.ninja/plugin/filters/ are enabled by default.
 
