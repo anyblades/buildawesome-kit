@@ -4,9 +4,9 @@
 
 <h1><mark class="fa-brands fa-square-build-awesome-stroke"></mark> Build Awesome Kit</h1>
 
-<big>Universal plugin with powerful opt-out [features](//build.blades.ninja/plugin/features/), [filters](//build.blades.ninja/plugin/filters/), and [scripts](//build.blades.ninja/scripts/).</big>
+<big>Lightweight plugin with essential opt-out [features](//build.blades.ninja/plugin/features/), [filters](//build.blades.ninja/plugin/filters/), and [scripts](//build.blades.ninja/scripts/).</big>
 
-Use it standalone <span class="faded">OR</span> fully pre-configured with other essential plugins <span class="faded">OR</span> via one of our micro-starters.
+Use it standalone <span class="faded">OR</span> fully pre-configured with other popular plugins <span class="faded">OR</span> via one of our micro-starters.
 
 <nav>
   <a href="//build.blades.ninja/plugin/" role="button">Get Started &nbsp;›</a>
