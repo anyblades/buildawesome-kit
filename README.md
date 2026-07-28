@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/npm/v/@anyblades/eleventy-blades?label=plugin&color=white"> <img src="https://img.shields.io/npm/v/@anyblades/eleventy-blades-base?label=base&color=white">
+<img src="https://img.shields.io/npm/v/@anyblades/buildawesome-kit?label=plugin&color=white"> <img src="https://img.shields.io/npm/v/@anyblades/buildawesome-kit-config?label=base&color=white">
 
 <!--section:summary-->
 
@@ -16,47 +16,56 @@ Use it standalone <span class="faded">OR</span> fully pre-configured with other 
   <a href="//build.blades.ninja/starters/" role="button" class="outline">Micro-starters&nbsp;&nbsp;🌱</a>
 </nav>
 
-<!--section:gh-only-->
+<!--section-->
 
 ---
 
-## Quick start
+## Core package
 
-<!--section:install-->
+### Plugin
 
-There are 3 ways to get started:
-
-### <mark>A.</mark> Plugin install
-
-Plugin gives you all the features and filters in one go without interfering with the rest of your 11ty config:
+<!--section:plugin-->
 
 ```sh
-npm install @anyblades/eleventy-blades
+npm install @anyblades/buildawesome-kit
 ```
 
-Then `addPlugin` to your 11ty config:
+Then `addPlugin()` to your config:
 
-```js
-import eleventyBladesPlugin from "@anyblades/eleventy-blades";
+```js {data-caption=buildawesome.config.js}
+import kitPlugin from "@anyblades/buildawesome-kit";
 
 export default function ($config) {
-  $config.addPlugin(eleventyBladesPlugin);
+  $config.addPlugin(kitPlugin);
 }
 ```
 
-You can toggle features/filters like this:
+Live example: https://github.com/anyblades/buildawesome-micro-starters/blob/main/bare-plugin/
 
-```js
-$config.addPlugin(eleventyBladesPlugin, {
-  mdAutoRawTags: false,
-  filters: { attr_set: false },
+#### Features
+
+All https://build.blades.ninja/plugin/features/ except `mdAutoRawTags` are enabled by default.
+
+You can toggle them like this:
+
+```js {data-caption=buildawesome.config.js}
+$config.addPlugin(kitPlugin, {
+  autoLinkFavicons: false,
+  mdAutoRawTags: true,
 });
 ```
 
-Live examples:
+#### Filters
 
-- https://github.com/anyblades/eleventy-blades/tree/main/examples/plugin-usage
-- https://github.com/anyblades/eleventy-blades/tree/main/packages/eleventy-blades-base
+All https://build.blades.ninja/plugin/filters/ are enabled by default.
+
+You can toggle them like this:
+
+```js {data-caption=buildawesome.config.js}
+$config.addPlugin(kitPlugin, {
+  filters: { attr_set: false },
+});
+```
 
 <!--section:install,install-starters-->
 
@@ -86,14 +95,14 @@ Built-in bare-minimum examples
 Base package bundles Eleventy *Bl*ades with other popular 11ty plugins, providing a ready-to-go reusable, zero-maintenance config:
 
 ```sh
-npm install @anyblades/eleventy-blades-base
+npm install @anyblades/buildawesome-kit-config
 
 # Link base templates:
 cd _includes/
 ln -s ../node_modules/@anyblades/blades/_includes/blades
 
 # Run Eleventy:
-eleventy --config=node_modules/@anyblades/eleventy-blades-base/buildawesome.config.js
+eleventy --config=node_modules/@anyblades/buildawesome-kit-config/buildawesome.config.js
 ```
 
 Live examples:
@@ -106,7 +115,7 @@ Live examples:
 If you don't want to type `--config=...` every time, symlink it once:
 
 ```sh
-ln -s node_modules/@anyblades/eleventy-blades-base/buildawesome.config.js
+ln -s node_modules/@anyblades/buildawesome-kit-config/buildawesome.config.js
 eleventy
 ```
 
@@ -114,7 +123,7 @@ Or save it in your `package.json` scripts:
 
 ```json
   "scripts": {
-    "build": "eleventy --config=node_modules/@anyblades/eleventy-blades-base/buildawesome.config.js"
+    "build": "eleventy --config=node_modules/@anyblades/buildawesome-kit-config/buildawesome.config.js"
   }
 ```
 
@@ -123,7 +132,7 @@ Or save it in your `package.json` scripts:
 Alternatively, import it as a base config in your 11ty config:
 
 ```js
-import baseConfig from "@anyblades/eleventy-blades-base";
+import baseConfig from "@anyblades/buildawesome-kit-config";
 
 export default async function ($config) {
   await baseConfig($config);
@@ -135,7 +144,7 @@ You can toggle features/filters like this:
 ```js
 await baseConfig($config, {
   plugins: {
-    "@anyblades/eleventy-blades": {
+    "@anyblades/buildawesome-kit": {
       mdAutoRawTags: false,
       filters: { attr_set: false },
     },

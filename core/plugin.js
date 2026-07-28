@@ -9,9 +9,7 @@ export const discoverModules = (dir) =>
   );
 
 export default async function ($config, userOptions) {
-  //```<!--section:code,def-options-->```js
   const defaultOptions = { mdAutoRawTags: false };
-  //```<!--section:code-->```js
   const options = Object.assign(
     {},
     discoverModules("./features"),

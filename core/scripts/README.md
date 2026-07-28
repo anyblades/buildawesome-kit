@@ -5,7 +5,7 @@ This package provides a pre-configured `do` folder setup that helps organize you
 1. Install https://github.com/anyblades/eleventy-blades to reuse pre-defined 11ty scripts from there:
 
 ```sh
-npm install @anyblades/eleventy-blades
+npm install @anyblades/buildawesome-kit
 ```
 
 2. Create a helper folder `do` to symlink the `do/package.json` within:
@@ -13,7 +13,7 @@ npm install @anyblades/eleventy-blades
 ```sh
 mkdir do
 cd do/
-ln -s ../node_modules/@anyblades/eleventy-blades/packages/do/package.json
+ln -s ../node_modules/@anyblades/buildawesome-kit/packages/do/package.json
 ```
 
 3. Finally register `do` folder as npm workspace in your root `package.json`:
