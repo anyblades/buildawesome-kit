@@ -2,7 +2,7 @@
 
 <!--section:summary-->
 
-<h1><mark class="fa-brands fa-square-build-awesome-stroke opt"></mark> Build Awesome Kit</h1>
+<h1><mark class="opt"><i class="fa-brands fa-square-build-awesome-stroke"></i></mark> Build Awesome Kit</h1>
 
 <big>Lightweight plugin with essential opt-out [features](//build.blades.ninja/plugin/features/), [filters](//build.blades.ninja/plugin/filters/), and [scripts](//build.blades.ninja/scripts/).</big>
 
