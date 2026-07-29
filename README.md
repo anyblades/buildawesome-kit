@@ -200,54 +200,54 @@ https://build.blades.ninja/starters/
 ## Documentation
 
 <ul class="columns">
-  
-  <li>
-    <strong><a href="/plugin/">Get started</a></strong>
-    <ul><li><a href="https://build.blades.ninja/plugin/">Plugin</a></li>
-<li><a href="https://build.blades.ninja/base/">Base package</a></li>
-<li><a href="https://build.blades.ninja/scripts/">Useful scripts</a></li>
-<li><a href="https://build.blades.ninja/starters/">Starter projects</a></li></ul>
-  </li>
-  
-  <li>
-    <strong><a href="/features/">Features</a></strong>
-    <ul><li><a href="https://build.blades.ninja/features/">Overview</a></li>
-<li><a href="https://build.blades.ninja/features/site-globals/">Site globals</a></li>
-<li><a href="https://build.blades.ninja/features/link-favicons/">Automatic link favicons</a></li>
-<li><a href="https://build.blades.ninja/features/markdown-auto-raw/">Markdown auto-raw tags</a></li>
-<li><a href="https://build.blades.ninja/features/markdown-hidden-attrs/">Markdown hidden attrs</a></li>
-<li><a href="https://build.blades.ninja/features/markdown-newlines/">Markdown newlines</a></li></ul>
-  </li>
-  
-  <li>
-    <strong><a href="/templates/">Templates</a></strong>
-    <ul><li><a href="https://blades.ninja/html/starter/">HTML base ↗</a></li>
-<li><a href="https://blades.ninja/html/links/">Links ↗</a></li>
-<li><a href="https://blades.ninja/html/sitemap/">Sitemap ↗</a></li>
-<li><a href="https://build.blades.ninja/templates/">More</a></li></ul>
-  </li>
-  
-  <li>
-    <strong><a href="/filters/">Filters</a></strong>
-    <ul><li><a href="https://build.blades.ninja/filters/attr_concat/">attr_concat</a></li>
-<li><a href="https://build.blades.ninja/filters/attr_includes/">attr_includes</a></li>
-<li><a href="https://build.blades.ninja/filters/attr_set/">attr_set</a></li>
-<li><a href="https://build.blades.ninja/filters/date/">date</a></li>
-<li><a href="https://build.blades.ninja/filters/fetch/">fetch</a></li>
-<li><a href="https://build.blades.ninja/filters/if/">if</a></li>
-<li><a href="https://build.blades.ninja/filters/markdownify/">markdownify</a></li>
-<li><a href="https://build.blades.ninja/filters/merge/">merge</a></li>
-<li><a href="https://build.blades.ninja/filters/remove_tag/">remove_tag</a></li>
-<li><a href="https://build.blades.ninja/filters/section/">section</a></li>
-<li><a href="https://build.blades.ninja/filters/strip_tag/">strip_tag</a></li>
-<li><a href="https://build.blades.ninja/filters/unindent/">unindent</a></li></ul>
-  </li>
-  
-  <li>
-    <strong><a href="/awesome/">Awesome</a></strong>
-    
-  </li>
-  
+
+<li>
+<strong><a href="//build.blades.ninja/plugin/">Core package</a></strong>
+<ul><li><a href="//build.blades.ninja/plugin/">Plugin</a></li>
+<li><a href="//build.blades.ninja/scripts/">Scripts</a></li></ul>
+</li>
+
+<li>
+<strong><a href="//build.blades.ninja/plugin/features/">Features</a></strong>
+<ul><li><a href="//build.blades.ninja/plugin/features/">Features overview</a></li>
+<li><a href="//build.blades.ninja/plugin/features/link-favicons/">Automatic link favicons</a></li>
+<li><a href="//build.blades.ninja/plugin/features/markdown-auto-raw/">Markdown auto-raw tags</a></li>
+<li><a href="//build.blades.ninja/plugin/features/markdown-hidden-attrs/">Markdown hidden attrs</a></li>
+<li><a href="//build.blades.ninja/plugin/features/markdown-newlines/">Markdown newlines</a></li>
+<li><a href="//build.blades.ninja/plugin/features/site-globals/">Site globals</a></li>
+<li><a href="//build.blades.ninja/plugin/features/virtual-pages/">Virtual pages <mark>NEW</mark></a></li></ul>
+</li>
+
+<li>
+<strong><a href="//build.blades.ninja/plugin/filters/">Filters</a></strong>
+<ul><li><a href="//build.blades.ninja/plugin/filters/">Filters overview</a></li>
+<li><a href="//build.blades.ninja/plugin/filters/attr_concat/">attr_concat</a></li>
+<li><a href="//build.blades.ninja/plugin/filters/attr_includes/">attr_includes</a></li>
+<li><a href="//build.blades.ninja/plugin/filters/attr_set/">attr_set</a></li>
+<li><a href="//build.blades.ninja/plugin/filters/date/">date</a></li>
+<li><a href="//build.blades.ninja/plugin/filters/fetch/">fetch</a></li>
+<li><a href="//build.blades.ninja/plugin/filters/if/">if</a></li>
+<li><a href="//build.blades.ninja/plugin/filters/markdownify/">markdownify</a></li>
+<li><a href="//build.blades.ninja/plugin/filters/merge/">merge</a></li>
+<li><a href="//build.blades.ninja/plugin/filters/remove_tag/">remove_tag</a></li>
+<li><a href="//build.blades.ninja/plugin/filters/section/">section</a></li>
+<li><a href="//build.blades.ninja/plugin/filters/split/">split <mark>NEW</mark></a></li>
+<li><a href="//build.blades.ninja/plugin/filters/strip_tag/">strip_tag</a></li>
+<li><a href="//build.blades.ninja/plugin/filters/unindent/">unindent</a></li></ul>
+</li>
+
+<li>
+<strong><a href="//build.blades.ninja/config/">Pre-configured</a></strong>
+<ul><li><a href="//build.blades.ninja/config/">All-in-one package</a></li>
+<li><a href="//build.blades.ninja/starters/">Starters</a></li>
+<li><a href="//build.blades.ninja/templates/">HTML templates</a></li></ul>
+</li>
+
+<li>
+<strong><a href="//build.blades.ninja/awesome/">Awesome</a></strong>
+
+</li>
+
 </ul>
 
 ---
