@@ -127,21 +127,21 @@ Live example: https://github.com/anyblades/buildawesome-micro-starters/tree/main
 npm install @awesome.me/buildawesome @anyblades/buildawesome-kit-config
 ```
 
-Everything is installed automatically; the only manual step is to create default layout.
+Everything is installed automatically; the only manual step is to create a default layout.
 
 For example, using the built-in base https://blades.ninja/html/ templates:
 
 ```sh
 mkdir _includes
 cd _includes/
-ln -s ../node_modules/@anyblades/blades/_includes/blades  # optional
+ln -s ../node_modules/@anyblades/blades/_includes/blades
 echo "{% extends 'blades/html.njk' %}{% set site = { styles: ['https://cdn.jsdelivr.net/npm/@anyblades/blades@2/css/blades.min.css'] } %}" > default.njk
 cd ..
 echo "Hello, world! 🎈" > index.md
 ```
 
 **Done!** 🥷
-: Now you can see the <b class="mark-brand">Build Awesome Kit</b> in action by using its own config file:
+: Now you can see the <b class="mark-brand">Build Awesome Kit</b> in action by using its built-in config file:
 
 ```sh
 npx @awesome.me/buildawesome --serve --config=node_modules/@anyblades/buildawesome-kit-config/buildawesome.config.js
