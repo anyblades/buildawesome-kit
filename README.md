@@ -108,102 +108,94 @@ Finally, register `scripts` as a "virtual" npm workspace:
   },
 ```
 
-**Done!**
-: Build Awesome Kit's `npm run start` / `stage` / `build` are ready to use in your project, AND automatically updated via `@anyblades/buildawesome-kit` package! 🥷
+**Done!** 🥷
+: Build Awesome Kit's `npm run start` / `stage` / `build` are ready to use in your project, AND automatically updated via `@anyblades/buildawesome-kit` package.
 
 Live example: https://github.com/anyblades/buildawesome-micro-starters/tree/main/bare-scripts
 
-<!--section:install,install-starters-->
+<!--section-->
 
 ---
 
-### <mark>B.</mark> Starter projects
+## Pre-configured
 
-Eleventy *Bl*ades plugin and base package are included out-of-the-box with:
+### All-in-one package
 
-`BA v4` [6-in-1 Starter](https://github.com/anyblades/buildawesome-starters)
-: Modern, lightweight Eleventy v4 multi-site starter showcasing Eleventy Blades Kit and Tailwind CLI for: [1] Tailwind CSS + Typography [2] Blades CSS [3] Bootstrap CSS [4] Pico CSS [5] Simple CSS [6] Liquid Templates.
-
-`11ty v4` [*S*ubtle](https://github.com/anyblades/subtle)
-: The most subtle Eleventy v4 micro-starter for content-first sites. Powered by Eleventy Blades Kit
-
-Built-in bare-minimum examples
-: https://github.com/anyblades/eleventy-blades/tree/main/examples
-
-<!--section:install-->
-
----
-
-### <mark>C.</mark> Base package
-
-<!--section:install,install-base-->
-
-Base package bundles Eleventy *Bl*ades with other popular 11ty plugins, providing a ready-to-go reusable, zero-maintenance config:
+<!--section:config-->
 
 ```sh
-npm install @anyblades/buildawesome-kit-config
+npm install @awesome.me/buildawesome @anyblades/buildawesome-kit-config
+```
 
-# Link base templates:
+Everything is installed automatically; the only manual step is to create default layout.
+
+For example, using the built-in base https://blades.ninja/html/ templates:
+
+```sh
+mkdir _includes
 cd _includes/
-ln -s ../node_modules/@anyblades/blades/_includes/blades
+ln -s ../node_modules/@anyblades/blades/_includes/blades  # optional
+echo "{% extends 'blades/html.njk' %}{% set site = { styles: ['https://cdn.jsdelivr.net/npm/@anyblades/blades@2/css/blades.min.css'] } %}" > default.njk
+cd ..
+echo "Hello, world! 🎈" > index.md
+```
 
-# Run Eleventy:
-eleventy --config=node_modules/@anyblades/buildawesome-kit-config/buildawesome.config.js
+**Done!** 🥷
+: Now you can see the <b class="mark-brand">Build Awesome Kit</b> in action by using its own config file:
+
+```sh
+npx @awesome.me/buildawesome --serve --config=node_modules/@anyblades/buildawesome-kit-config/buildawesome.config.js
 ```
 
 Live examples:
 
-- https://github.com/anyblades/buildawesome-starters
-- https://github.com/anyblades/subtle/tree/main/.11ty
+- https://github.com/anyblades/buildawesome-micro-starters/tree/main/micro
+- https://github.com/anyblades/buildawesome-content-first/tree/main/.build
 
-<div><hr></div>
+---
 
-If you don't want to type `--config=...` every time, symlink it once:
-
-```sh
-ln -s node_modules/@anyblades/buildawesome-kit-config/buildawesome.config.js
-eleventy
-```
-
-Or save it in your `package.json` scripts:
+If you don't want to type `--config=...` every time, save it to your `package.json`:
 
 ```json
-  "scripts": {
-    "build": "eleventy --config=node_modules/@anyblades/buildawesome-kit-config/buildawesome.config.js"
-  }
-```
-
-<div><hr></div>
-
-Alternatively, import it as a base config in your 11ty config:
-
-```js
-import baseConfig from "@anyblades/buildawesome-kit-config";
-
-export default async function ($config) {
-  await baseConfig($config);
+"scripts": {
+  "build": "buildawesome --config=node_modules/@anyblades/buildawesome-kit-config/buildawesome.config.js",
+  "start": "npm run build -- --serve"
 }
 ```
 
-You can toggle features/filters like this:
-
-```js
-await baseConfig($config, {
-  plugins: {
-    "@anyblades/buildawesome-kit": {
-      mdAutoRawTags: false,
-      filters: { attr_set: false },
-    },
-  },
-});
-```
+Now you can simply `npm run start` / `build`! 🥷
 
 Live examples:
 
-- https://github.com/johnheenan/minform/blob/main/buildawesome.config.js
-- https://github.com/hostfurl/minformhf/blob/main/buildawesome.config.js
+- https://github.com/anyblades/buildawesome-micro-starters/blob/main/micro/package.json
+- https://github.com/anyblades/buildawesome-content-first/blob/main/.build/package.json
 
-<!--section:gh-only-->
+---
+
+You can also import and use it as a "base" config:
+
+```js {data-caption=buildawesome.config.js}
+import kitConfig from "@anyblades/buildawesome-kit-config";
+
+export default async function ($config) {
+  await kitConfig($config);
+
+  // Customize $config further as you like:
+  $config.addPlugin(...);
+}
+```
+
+Live example: https://github.com/anyblades/buildawesome-micro-starters/blob/main/shotpipe-og-images/buildawesome.config.js
+
+<!--section-->
+
+---
+
+### Micro-starters
+
+https://build.blades.ninja/starters/
+
+---
 
 ## Documentation
 
