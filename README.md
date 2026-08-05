@@ -256,10 +256,11 @@ https://build.blades.ninja/starters/
 
 ## <sup style>Featured by</sup><!--A-Z sites, then @users-->
 
-- [11ty.dev](https://www.11ty.dev/docs/starter/#:~:text=blades) [↗](https://www.11ty.dev/docs/plugins/community/#:~:text=blades)
-- [11tybundle.dev](https://11tybundle.dev/blog/11ty-bundle-88/#:~:text=blades)
+<!--[11ty.dev]-->
+
+- [11tybundle.dev](https://11tybundle.dev/starters/#:~:text=build%20awesome%20kit)
 - [sveltiacms.app](https://sveltiacms.app/en/docs/frameworks/eleventy#:~:text=anyblades)
 - [@hamatti](https://hamatti.org/posts/markdown-content-split-to-sections-in-eleventy-and-nunjucks/#:~:text=section%20filter)
-- [@johnheenan](https://github.com/johnheenan/minform#css-and-performance)
 
 <!--{.markerless .columns}-->
+<!--[hostfurl.com, @johnheenan]-->
